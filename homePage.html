@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homePage</title>
+    <link rel="stylesheet" href="homePage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/979fd73ae7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="homePage.html"
+          ><img style="width: 150px" src="./images/logo.jpg"
+        /></a>
+        <div class="navLinks" id="navLinks">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li id="signIn"><a href="loginPage.html">SIGN UP</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="textBox">
+        <h1>Content Here</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+          recusandae veniam facilis impedit asperiores eum mollitia illum nulla
+          at minus ab odio soluta obcaecati omnis provident! Tempora nemo sunt
+          quaerat.
+        </p>
+      </div>
+    </section>
+
+    <section class="aboutUs">
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+        porro laborum neque tempore rerum? Perferendis dolorum tenetur eum
+        voluptate amet quasi aliquid ut, et quo totam non obcaecati repellendus
+        eos?
+      </p>
+      <div class="rows">
+        <div class="aboutCol">
+          <h3>Person 1</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eveniet
+            tenetur autem, voluptatem earum at cupiditate eligendi, delectus
+            repellendus nesciunt, nostrum explicabo placeat voluptates
+            dignissimos voluptate! Est inventore eius fuga.
+          </p>
+        </div>
+        <div class="aboutCol">
+          <h3>Person 2</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eveniet
+            tenetur autem, voluptatem earum at cupiditate eligendi, delectus
+            repellendus nesciunt, nostrum explicabo placeat voluptates
+            dignissimos voluptate! Est inventore eius fuga.
+          </p>
+        </div>
+        <div class="aboutCol">
+          <h3>Person 3</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eveniet
+            tenetur autem, voluptatem earum at cupiditate eligendi, delectus
+            repellendus nesciunt, nostrum explicabo placeat voluptates
+            dignissimos voluptate! Est inventore eius fuga.
+          </p>
+        </div>
+        <div class="aboutCol">
+          <h3>Person 4</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eveniet
+            tenetur autem, voluptatem earum at cupiditate eligendi, delectus
+            repellendus nesciunt, nostrum explicabo placeat voluptates
+            dignissimos voluptate! Est inventore eius fuga.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h1>What Do Users Say</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptas
+        impedit, sunt quod quia aliquam id quos quae repudiandae laborum nulla
+        officiis animi, delectus ex. Soluta atque veritatis fuga cumque?
+      </p>
+      <div class="rows">
+        <div class="testiCol">
+          <img src="images/pic2.png" />
+          <div>
+            <p>text</p>
+            <h3>User 1</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="testiCol">
+          <img src="images/pic2.png" />
+          <div>
+            <p>text</p>
+            <h3>User 2</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptate
+        tenetur eius reprehenderit enim asperiores accusantium harum <br />odio
+        in quaerat eveniet ab est nostrum, consectetur atque laborum voluptatum
+        quod pariatur!
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by ME!</p>
+    </section>
+
+    <!-- for menu toggle -->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-205px";
+      }
+    </script>
+  </body>
+</html>

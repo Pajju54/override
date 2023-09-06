@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>loginPage</title>
     <link rel="stylesheet" href="loginPage.css" />
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
     <script
       src="https://kit.fontawesome.com/979fd73ae7.js"
       crossorigin="anonymous"
@@ -13,9 +12,6 @@
   <body>
     <div class="container">
       <div class="form-box">
-        <button id = "close"><i class="gg-close"></i></button>
-        
-
         <h1 id="title">Sign Up</h1>
         <form>
           <div class="input-group">
@@ -33,7 +29,7 @@
               <i class="fa-solid fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <p id = "forgot"></p>
+            <p id="forgot"></p>
           </div>
           <div class="btn-field">
             <button type="button" id="signupBtn">Sign Up</button>
@@ -50,9 +46,7 @@
       let signinBtn = document.getElementById("signinBtn");
       let nameField = document.getElementById("nameField");
       let title = document.getElementById("title");
-      let forget = document.getElementById("forgot");
-
-
+      let forgot = document.getElementById("forgot");
       signinBtn.onclick = function () {
         nameField.style.maxHeight = "0";
         title.innerHTML = "Sign In";
@@ -65,7 +59,7 @@
         title.innerHTML = "Sign Up";
         signupBtn.classList.remove("disable");
         signinBtn.classList.add("disable");
-        forget.innerHTML = "";
+        forgot.innerHTML = "";
       };
     </script>
   </body>
